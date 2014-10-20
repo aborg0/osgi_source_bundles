@@ -10,12 +10,14 @@
   <packaging>bundle</packaging>
   <properties>
         <source.artifact>stax2-api</source.artifact>
-        <bundle.name>${project.artifactId}</bundle.name>
+        <source.group>org.codehaus.woodstox</source.group>
+        <!-- The bundle did not follow the usual naming scheme. -->
+        <bundle.name>${source.artifact}</bundle.name>
         <bundle.version>${project.version}</bundle.version>
   </properties>
   <dependencies>
     <dependency>
-    	<groupId>org.codehaus.woodstox</groupId>
+    	<groupId>${source.group}</groupId>
     	<artifactId>${source.artifact}</artifactId>
     	<version>${project.version}</version>
     	<type>bundle</type>

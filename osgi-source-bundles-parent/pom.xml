@@ -9,9 +9,12 @@
 
   <name>osgi-source-bundles-parent</name>
 
+<!-- Based on http://codeiseasy.wordpress.com/2012/07/22/convert-a-maven-source-bundle-to-an-eclipse-source-bundle/ -->
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <jackson.version>2.4.3</jackson.version>
+    <bundle.name>${source.group}.${source.artifact}</bundle.name>
   </properties>
  
     <build>

@@ -10,12 +10,13 @@
   <packaging>bundle</packaging>
   <properties>
         <source.artifact>asm</source.artifact>
-        <bundle.name>${project.artifactId}</bundle.name>
+        <source.group>net.minidev</source.group>
+        <bundle.name>${source.group}.${source.artifact}</bundle.name>
         <bundle.version>${project.version}</bundle.version>
   </properties>
   <dependencies>
     <dependency>
-    	<groupId>net.minidev</groupId>
+    	<groupId>${source.group}</groupId>
     	<artifactId>${source.artifact}</artifactId>
     	<version>${project.version}</version>
     	<type>bundle</type>
