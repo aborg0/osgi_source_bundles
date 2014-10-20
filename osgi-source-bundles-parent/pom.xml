@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.mind-era</groupId>
+  <artifactId>osgi-source-bundles-parent</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>osgi-source-bundles-parent</name>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <jackson.version>2.4.3</jackson.version>
+  </properties>
+ 
+    <build>
+        <plugins>
+ 
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>2.3.7</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Bundle-ManifestVersion>2</Bundle-ManifestVersion>
+                        <Bundle-SymbolicName>${bundle.name}.source</Bundle-SymbolicName>
+                        <Bundle-Version>${bundle.version}</Bundle-Version>
+                        <!-- This defines the bundle we provide the source for -->
+                        <Eclipse-SourceBundle>${bundle.name};version="${bundle.version}";roots:="."</Eclipse-SourceBundle>
+                        <!-- Extract all sources into this bundle -->
+                        <Embed-Dependency>classifier=sources;inline=true</Embed-Dependency>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <modules>
+    	<module>jackson-core</module>
+    	<module>jackson-annotations</module>
+    	<module>jackson-databind</module>
+    	<module>javax.json-api</module>
+    	<module>jackson-datatype-jsr353</module>
+    	<module>jackson-dataformat-xml</module>
+    	<module>jackson-coreutils</module>
+    	<module>msg-simple</module>
+    	<module>btf</module>
+    	<module>woodstox-core-asl</module>
+    	<module>stax2-api</module>
+    	<module>jackson-module-jaxb-annotations</module>
+    	<module>json-smart-asm</module>
+    	<module>json-path</module>
+    	<module>jopt-simple</module>
+    	<module>json-schema-core</module>
+    	<module>json-schema-validator</module>
+    	<module>uri-template</module>
+    	<module>joda-time</module>
+    	<module>json-patch</module>
+    </modules>
+</project>

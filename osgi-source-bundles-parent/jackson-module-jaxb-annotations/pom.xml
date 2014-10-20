@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.mind-era</groupId>
+    <artifactId>osgi-source-bundles-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <version>${jackson.version}</version>
+  <artifactId>${source.artifact}.source</artifactId>
+  <packaging>bundle</packaging>
+  <properties>
+        <source.artifact>jackson-module-jaxb-annotations</source.artifact>
+        <bundle.name>${project.artifactId}</bundle.name>
+        <bundle.version>${project.version}</bundle.version>
+  </properties>
+  <dependencies>
+    <dependency>
+    	<groupId>com.fasterxml.jackson.module</groupId>
+    	<artifactId>${source.artifact}</artifactId>
+    	<version>${project.version}</version>
+    	<type>bundle</type>
+    	<!-- Get the source code project -->
+    	<classifier>sources</classifier>
+    </dependency>
+  </dependencies>
+</project>
