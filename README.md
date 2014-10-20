@@ -1,4 +1,4 @@
-osgi_source_bundles
+OSGi source bundles
 ===================
 
 Maven projects to generate source bundles for some JSON libraries.
@@ -28,6 +28,6 @@ It generates the bundles for the following projects:
 Usage
 -----
 
-`mvn package`
+`mvn package` or `mvn install` (with the latter you can use the `~/.m2/repository.xml` to add to the target platform.)
 
 Copy the generated source bundles to your target platform.
