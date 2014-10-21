@@ -3,4 +3,5 @@ jdk:
 - oraclejdk7
 before_install:
 - cd osgi-source-bundles-parent
-script: true
+#In case you want to disable the tests uncomment the next line:
+#script: true
