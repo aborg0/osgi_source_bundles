@@ -8,6 +8,9 @@
   <version>1.1.0</version>
   <artifactId>${source.artifact}.source</artifactId>
   <packaging>bundle</packaging>
+  <description>
+Json Path (source bundle)
+  </description>
   <properties>
         <source.artifact>json-path</source.artifact>
         <source.group>com.jayway.jsonpath</source.group>

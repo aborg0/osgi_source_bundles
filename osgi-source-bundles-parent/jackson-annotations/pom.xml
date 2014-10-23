@@ -8,6 +8,9 @@
   <version>${jackson.version}</version>
   <artifactId>${source.artifact}.source</artifactId>
   <packaging>bundle</packaging>
+  <description>
+Core annotations used for value types, used by Jackson data binding package. (source bundle)
+  </description>
   <properties>
         <source.artifact>jackson-annotations</source.artifact>
     	<source.group>com.fasterxml.jackson.core</source.group>

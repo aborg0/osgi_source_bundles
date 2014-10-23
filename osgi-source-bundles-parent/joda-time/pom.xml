@@ -8,6 +8,9 @@
   <version>2.5</version>
   <artifactId>${source.artifact}.source</artifactId>
   <packaging>bundle</packaging>
+  <description>
+Date and time library to replace JDK date handling (source bundle)
+  </description>
   <properties>
         <source.artifact>joda-time</source.artifact>
         <source.group>joda-time</source.group>

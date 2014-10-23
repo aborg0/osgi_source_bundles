@@ -8,6 +8,9 @@
   <version>${jackson.version}</version>
   <artifactId>${source.artifact}.source</artifactId>
   <packaging>bundle</packaging>
+  <description>
+Data format extension for Jackson (http://jackson.codehaus.org) to offer alternative support for serializing POJOs as XML and deserializing XML as pojos. Support implemented on top of Stax API (javax.xml.stream), by implementing core Jackson Streaming API types like JsonGenerator, JsonParser and JsonFactory. Some data-binding types overridden as well (ObjectMapper sub-classed as XmlMapper). (source bundle)
+  </description>
   <properties>
         <source.artifact>jackson-dataformat-xml</source.artifact>
         <source.group>com.fasterxml.jackson.dataformat</source.group>
