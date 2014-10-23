@@ -8,6 +8,9 @@
   <version>1.0</version>
   <artifactId>${source.artifact}.source</artifactId>
   <packaging>bundle</packaging>
+  <description>
+API module of JSR 353:Java API for Processing JSON (source bundle)
+  </description>
   <properties>
         <source.artifact>javax.json-api</source.artifact>
         <source.group>javax.json</source.group>

@@ -8,6 +8,9 @@
   <version>${jackson.version}</version>
   <artifactId>${source.artifact}.source</artifactId>
   <packaging>bundle</packaging>
+  <description>
+Add-on module for Jackson (http://jackson.codehaus.org) to support working with JSR-353 (JDK Json-processing API) node typesm via data-binding (source bundle)
+  </description>
   <properties>
         <source.artifact>jackson-datatype-jsr353</source.artifact>
         <source.group>com.fasterxml.jackson.datatype</source.group>

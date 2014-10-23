@@ -8,6 +8,9 @@
   <version>0.9</version>
   <artifactId>${source.artifact}.source</artifactId>
   <packaging>bundle</packaging>
+  <description>
+com.github.fge:uri-template (source bundle)
+  </description>
   <properties>
         <source.artifact>uri-template</source.artifact>
         <source.group>com.github.fge</source.group>
