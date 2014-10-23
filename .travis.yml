@@ -3,5 +3,14 @@ jdk:
 - oraclejdk7
 before_install:
 - cd osgi-source-bundles-parent
-#In case you want to disable the tests uncomment the next line:
-#script: true
+deploy:
+  provider: releases
+  api_key:
+    secure: nsYmc/dVMjJkZ7I9x9PtaO1h5OXUgWandT5THda2utDCfuU6YKncEmmaRpuexT3Te8IDW1MkuM4EIKUsH1Arq3Am/mmUzlzL5s1u7Ht4H0sVcu0HbcMRhCNUbXD2n0+cUWXtnYSvVmmk+hpHjH49eZ2Qn2Zjk5ez4IPq7Jh6y/A=
+  file:
+    - "osgi_source_bundles_parent/btf/target/btf.source-1.2.jar"
+    - "osgi_source_bundles_parent/jackson-annotations/target/jackson-annotations.source-2.4.3.jar"
+  on:
+    repo: aborg0/osgi_source_bundles
+    tags: true
+    all_branches: true
