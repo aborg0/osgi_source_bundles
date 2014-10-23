@@ -9,7 +9,7 @@ deploy:
     secure: nsYmc/dVMjJkZ7I9x9PtaO1h5OXUgWandT5THda2utDCfuU6YKncEmmaRpuexT3Te8IDW1MkuM4EIKUsH1Arq3Am/mmUzlzL5s1u7Ht4H0sVcu0HbcMRhCNUbXD2n0+cUWXtnYSvVmmk+hpHjH49eZ2Qn2Zjk5ez4IPq7Jh6y/A=
   file:
     - "/home/travis/build/aborg0/osgi_source_bundles/osgi-source-bundles-parent/btf/target/btf.source-1.2.jar"
-    - "/home/travis/build/aborg0/osgi_source_bundles/osgi_source_bundles_parent/jackson-annotations/target/jackson-annotations.source-2.4.3.jar"
+    - "/home/travis/build/aborg0/osgi_source_bundles/osgi-source-bundles-parent/jackson-annotations/target/jackson-annotations.source-2.4.3.jar"
     - "/home/travis/build/aborg0/osgi_source_bundles/osgi-source-bundles-parent/jackson-core/target/jackson-core.source-2.4.3.jar"
     - "/home/travis/build/aborg0/osgi_source_bundles/osgi-source-bundles-parent/jackson-coreutils/target/jackson-coreutils.source-1.8.jar"
     - "/home/travis/build/aborg0/osgi_source_bundles/osgi-source-bundles-parent/jackson-databind/target/jackson-databind.source-2.4.3.jar"
