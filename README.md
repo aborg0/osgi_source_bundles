@@ -1,5 +1,6 @@
 OSGi source bundles
 ===================
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/aborg0/osgi_source_bundles?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Maven projects to generate source bundles for some JSON libraries.
 
