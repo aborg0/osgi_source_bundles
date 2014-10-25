@@ -8,6 +8,7 @@
   <version>${jackson.version}</version>
   <artifactId>${source.artifact}.source</artifactId>
   <packaging>bundle</packaging>
+  <name>Jackson-annotations source bundle</name>
   <description>
 Core annotations used for value types, used by Jackson data binding package. (source bundle)
   </description>
