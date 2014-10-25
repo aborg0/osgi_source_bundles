@@ -8,6 +8,9 @@
   <version>1.2</version>
   <artifactId>${source.artifact}.source</artifactId>
   <packaging>bundle</packaging>
+  <name>
+com.github.fge:btf (source bundle)
+  </name>
   <description>
 com.github.fge:btf (source bundle)
   </description>
